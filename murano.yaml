@@ -1,0 +1,37 @@
+formatversion: 1.0.0
+
+info:
+  name: microVerticalBackend
+  summary: One line summary of
+  description: |
+    In depth description of
+
+    With lots of details.
+  authors:
+    - 'exosite'
+  version: 2.21.2
+
+assets:
+  location: assets
+  include: '**/*'
+  exclude: ['**/.*']
+  default_page: index.html
+
+endpoints:
+  location: routes
+  include: '**/*.lua'
+  exclude: ['*_test.lua', '*_spec.lua', '**/.*']
+  cors: {'origin': ['http://localhost:*']}
+
+modules:
+  location: modules
+  include: ['*.lua', 'src/*.lua', 'migrations/*.lua']
+  exclude: ['*_test.lua', '*_spec.lua', '**/.*']
+
+services: # Also applies for service configuration using .yaml format.
+  location: services
+  include: '**/*.lua'
+  exclude: ['*_test.lua', '*_spec.lua', '**/.*']
+
+init_script: init.lua
+
