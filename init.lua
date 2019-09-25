@@ -12,7 +12,7 @@
 -- local MGR = require('migrator')
 -- MGR.up()
 
-local param = Config.getParameters({service='webservice'})
+local param = Config.getParameters({service='webservice2'})
 log.info(to_json(param))
 -- local param = {
 --     service='webservice',
