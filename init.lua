@@ -13,7 +13,6 @@
 -- MGR.up()
 
 local param = Config.getParameters({service='webservice'})
-log.info(to_json(param))
 if param.error then
     param = {
         service='webservice',
